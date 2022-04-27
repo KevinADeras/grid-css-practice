@@ -6,17 +6,19 @@
 
 .container{
     display:grid;
-    grid-template-rows: repeat(3, 200px);
-    grid-auto-columns: 200px ;
+    place-content: center;
+    grid-template-rows: repeat(3, 150px);
+    grid-auto-columns: 150px ;
     grid-auto-flow: column;
     gap: 20px;
-    place-content: center;
+    height: 600px;
+    background-color: rgb(233, 224, 213);
+    border: 2px solid;
 }
 
 .item{
     display: grid;
-    justify-items: end;
-    align-items:flex-end;
+    place-items: end;
     border: 5px solid rgb(56, 155, 194);
     font-size: 6rem;
     font-weight: bold;
@@ -39,7 +41,7 @@ span{
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 35px;
+    width: 45px;
     height: 45px;
     background-color:rgb(13, 85, 23) ;
 }
